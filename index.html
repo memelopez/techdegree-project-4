@@ -5,78 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lightbox Photo Gallery</title>
+    <link href="css/lightbox/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <input type="text">
+            <input id="search" name="search" placeholder="Search" type="text" data-list=".gallery">
         </div>
         <div class="gallery">
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/01.jpg" data-lightbox="gallery-set" data-title="Hay Bales<br>I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                     <img src="photos/thumbnails/01.jpg" alt="Hay Bales" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/02.jpg" data-lightbox="gallery-set" data-title="Lake<br>The lake was so calm today. We had a great view of the snow on the mountains from here.">
                     <img src="photos/thumbnails/02.jpg" alt="Lake" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/03.jpg" data-lightbox="gallery-set" data-title="Canyon<br>I hiked to the top of the mountain and got this picture of the canyon and trees below.">
                     <img src="photos/thumbnails/03.jpg" alt="Canyon" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/04.jpg" data-lightbox="gallery-set" data-title="Iceberg<br>It was amazing to see an iceberg up close, it was so cold but didn’t snow today. ">
                     <img src="photos/thumbnails/04.jpg" alt="Iceberg" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/05.jpg" data-lightbox="gallery-set" data-title="Desert<br>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
                     <img src="photos/thumbnails/05.jpg" alt="Desert" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/06.jpg" data-lightbox="gallery-set" data-title="Fall<br>Fall is coming, I love when the leaves on the trees start to change color.">
                     <img src="photos/thumbnails/06.jpg" alt="Fall" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/07.jpg" data-lightbox="gallery-set" data-title="Plantation<br>I drove past this plantation yesterday, everything is so green!">
                     <img src="photos/thumbnails/07.jpg" alt="Plantation" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/08.jpg" data-lightbox="gallery-set" data-title="Dunes<br>My summer vacation to the Oregon Coast. I love the sandy dunes!">
                     <img src="photos/thumbnails/08.jpg" alt="Dunes" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/09.jpg" data-lightbox="gallery-set" data-title="Countryside Lane<br>We enjoyed a quiet stroll down this countryside lane.">
                     <img src="photos/thumbnails/09.jpg" alt="Countryside Lane" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/10.jpg" data-lightbox="gallery-set" data-title="Sunset<br>Sunset at the coast! The sky turned a lovely shade of orange.">
                     <img src="photos/thumbnails/10.jpg" alt="Sunset" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/11.jpg" data-lightbox="gallery-set" data-title="Cave<br>I did a tour of a cave today and the view of the landscape below was breathtaking.">
                     <img src="photos/thumbnails/11.jpg" alt="Cave" srcset="">
                 </a>
             </div>
             <div class="image-card">
-                <a href="#">
+                <a class="galleryImage" href="photos/12.jpg" data-lightbox="gallery-set" data-title="Bluebells<br>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
                     <img src="photos/thumbnails/12.jpg" alt="Bluebells" srcset="">
                 </a>
             </div>
-        </div>
+        </div> <!-- .gallery -->
         
-    </div>
+    </div> <!-- .container -->
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/lightbox/lightbox.js"></script>
+    <!-- <script type="text/javascript" src="js/hideseek/jquery.hideseek.min.js"></script> -->
     <script src="js/main.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 300,
+          'wrapAround': true
+        })
+    </script>
 </body>
 </html>

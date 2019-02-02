@@ -5,14 +5,18 @@
 	box-sizing: border-box;
 }
 body {
+    font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 0;
     margin: 0;
 }
 
 input {
-    min-height: 4em;
+    height: 40px;
     border: 1px solid grey;
     border-radius: 3px;
-    min-width: 40em;
+    width: 450px;
 }
 
 img {
@@ -25,21 +29,18 @@ img {
 
 .container {
     width: 100%;
-    padding: 0 5em;
+    padding: 0 100px;
 }
 
 .header {
-    margin: 2em;
+    margin: 20px;
     display: flex;
     justify-content: center;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 40px;
 }
 
-.image-card{
-    width: 25%;
-    padding: 1em;
-}
