@@ -29,7 +29,7 @@ img {
 
 .container {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 25px;
 }
 
 .header {
@@ -40,7 +40,46 @@ img {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: 1fr;
+    /* repeat(auto-fill, minmax(150px, 1fr)); */
+    grid-gap: 15px;
 }
 
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 450px){
+    .container {
+        padding: 0 50px;
+        grid-gap: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 700px){
+    .container {
+        padding: 0 50px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (min-width: 900px){
+    .container {
+        padding: 0 74px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+    }
+}
